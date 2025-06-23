@@ -1,10 +1,16 @@
-describe('Login - Adopet', () => {
+describe('Login - Practice Test Automation', () => {
   it('Deve exibir mensagem de erro com credenciais inválidas', () => {
-    cy.visit('/login');
-    cy.get('input[name=email]').type('emailinvalido@email.com');
-    cy.get('input[name=password]').type('senhaerrada');
-    cy.get('button[type=submit]').click();
+    cy.visit('https://practicetestautomation.com/practice-test-login/');
 
-    cy.contains('E-mail e/ou senha inválidos').should('be.visible');
+    cy.get('#username').type('usuariodebugado');
+    cy.get('#password').type('senhaincorreta');
+
+    cy.get('#submit').click({ force: true });
+
+    cy.get('#error').should('contain.text', 'Your username is invalid!');
   });
 });
+
+
+
+
