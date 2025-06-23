@@ -1,0 +1,12 @@
+{
+  "name": "qa-login-tests-cypress",
+  "version": "1.0.0",
+  "description": "Testes de login automatizados com Cypress",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.0.0"
+  }
+}
