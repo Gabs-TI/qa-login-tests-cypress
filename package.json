@@ -1,12 +1,22 @@
 {
   "name": "qa-login-tests-cypress",
   "version": "1.0.0",
-  "description": "Testes de login automatizados com Cypress",
+  "description": "Testes automatizados de login com Cypress",
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "test": "cypress run"
   },
   "devDependencies": {
-    "cypress": "^13.0.0"
-  }
+    "cypress": "^12.17.0"
+  },
+  "keywords": [
+    "cypress",
+    "qa",
+    "automation",
+    "login",
+    "tests"
+  ],
+  "author": "Gabriela Gomes",
+  "license": "MIT"
 }
+
